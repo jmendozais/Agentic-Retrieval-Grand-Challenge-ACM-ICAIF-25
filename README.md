@@ -10,9 +10,9 @@ Run hybrid retrieval (BM25 + semantic embeddings) and produce reranked outputs f
 - dataset.py, preprocessing.py — dataset parsing and cleaning helpers.
 
 ## Requirements
-- Python 3.9+ (ensure package compatibility)
+- Python 3.13+ (ensure package compatibility)
 - Install core packages:
-  pip install -r requirements.txt
+  conda env create -f environment.yml
 
 ## Quick usage
 1. Place dataset under a local path and update main.py or pass via CLI.

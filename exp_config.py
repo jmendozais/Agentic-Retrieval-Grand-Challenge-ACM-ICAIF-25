@@ -1,5 +1,6 @@
 from langchain_community.vectorstores.utils import DistanceStrategy
 
+# Distance strategy
 distance_strategy_cfgs = [
     {
         "semantic_weight": 1,

@@ -5,7 +5,7 @@ import argparse
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 
 import dataset
-from retrieve import HybridRetriever, BM25, create_faiss_vector_store
+from retrieval import HybridRetriever, BM25, create_faiss_vector_store
 from preprocessing import clean_text
 import exp_config
 
@@ -21,6 +21,7 @@ def rerank_dataset(data,
                    semantic_weight = 0,
                    distance_strategy = None):
     
+    # TODO: move embedding instasntiation outside
     model_kwargs = {"device":"cuda"}
     embedding_model_name = "/home/julio/Documents/professional-skills/ml/ICAIF25/models/roberta-large-ft/checkpoint-4200"
 
