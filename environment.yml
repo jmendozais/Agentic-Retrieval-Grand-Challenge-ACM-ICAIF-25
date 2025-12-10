@@ -1,0 +1,28 @@
+name: icaif25
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - pandas
+  - matplotlib
+  - seaborn
+  - pip
+  - pip:
+      - torch
+      - peft
+
+  - sentence-transformers
+  - langchain
+  - langchain-community  
+  
+  - pip:
+      - langchain-chroma
+      - langchain-huggingface
+      - langgraph
+      - langchain-google-genai
+      - vllm
+      - accelerate
+      - faiss-cpu
+      - rank_bm25
+
+

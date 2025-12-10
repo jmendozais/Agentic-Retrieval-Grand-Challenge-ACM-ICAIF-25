@@ -1,0 +1,6 @@
+notes.MD
+output/*
+models
+.vscode
+__pycache__/
+eda.ipynb
